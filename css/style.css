@@ -2,8 +2,8 @@
 
 body {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
 	color: #2A3A3F;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1:not(.intro) {
@@ -11,19 +11,30 @@ h1:not(.intro) {
 	font-weight: bold;
 }
 
+h2 {
+	margin-top: 0; /*Maybe*/
+}
+
 a, a:hover {
 	text-decoration: none;
 	color: #fff;
 }
 
+.pill-btn {
+	margin-bottom: 50px;
+}
 
-
-/*Zero Margins*/
-#header, #container h1 {
-	margin: 0;
+.lead {
+	margin-bottom: 0;
 }
 
 /*Header*/
+
+#header, #container h1 {
+	line-height: 1.3;
+	margin: 0;
+}
+
 #header {
 	position: relative;
 	background: ;
@@ -44,16 +55,17 @@ a, a:hover {
 
 #container .btn {
 	display: inline-block;
-	margin-top: 10%;
-	padding: 2% 10%;
+	margin-top: 14%;
+	padding: 10px 40px;
 	border-radius: 50px;
 	border: solid 3px #397FDA;
 	transition: all .3s ease-in-out;
+	font-size: 1.2em;
 	font-weight: 600;
 }
 
 #container .btn:hover {
-	padding: 2% 12%;
+	padding: 10px 55px;
 	background-color: #397FDA;
 	color: #333;
 	transition: all .3s ease-in-out;
@@ -115,10 +127,12 @@ a, a:hover {
     100% { opacity:1; }
 }
 
+
+
 /*Skills Section*/
 
 .skills {
-	padding: 5% 0 0 0 ;
+	padding: 6% 0 ;
 	margin: auto;;
 }
 
@@ -129,16 +143,27 @@ a, a:hover {
 
 .skills h2 {
 	margin: 10px inherit;
+	font-weight: bold;
+}
+
+.skills .lead {
+	margin-bottom: 10%;
+}
+
+.skills-row {
+	margin-top: 6%;
 }
 
 .skills-block p {
-	color: #737373;
-	line-height: 1.6;
+	color: #999;
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 1.8;
 }
 
 /*On skills-block:hover, rotate icons*/
 
-.skills-block:hover i {
+.skills-block:hover i , .watched {
 	transition: 0.9s ease-in-out;
     transform: rotate(360deg);
 }
@@ -150,12 +175,21 @@ a, a:hover {
 	text-align: center;
 	color: #397FDA;
 	font-size: 6rem;
+	margin-bottom: 10%;
 }
 
 /*Work Section*/
 
-.work h1, .work p{
+.work h1, .work .lead{
 	text-align: center;
+}
+
+.work h1, .other h1 {
+	margin-top: 8%;
+}
+
+.work p, .other .lead {
+	margin-bottom: 3%;
 }
 
 .work {
@@ -165,11 +199,15 @@ a, a:hover {
 /*Projects text*/
 
 .work h2 {
-	margin-bottom: 0;
+	margin-bottom: 2%;
 }
 
 .project p {
-	color: #93a4aa;
+	color: #737373;
+	margin-bottom: 11%;
+	line-height: 1.5;
+	font-size: 1.1em;
+	font-weight: 500;
 }
 
 .project p, .tags {
@@ -182,7 +220,8 @@ a, a:hover {
     background-color: #397FDA;
     border-radius: 15px;
     margin-right: 5px;
-    color: white
+    margin-bottom: 7%;
+    color: white;
 }
 
 /*Project Image*/
@@ -199,7 +238,7 @@ a, a:hover {
 
 .project {
 	margin: 5% inherit;
-	padding: 40px 0 40px 0; 
+	padding: 8% 0 8% 0; 
 	border-bottom: solid 1px #d6e1e5;
 }
 
@@ -207,8 +246,9 @@ a, a:hover {
 
 .project-btn {
 	border-radius: 50px;
-	padding: 2% 6%;
+	padding: 3% 6%;
 	border: 3px solid #397FDA;
+	font-weight: bold;
 	color: #222;
 	transition: all .4s ease-in-out;
 
@@ -216,7 +256,7 @@ a, a:hover {
 
 .project-btn:hover {
 	background-color: #397FDA;
-	padding: 2% 8%;
+	padding: 3% 8%;
 	transition: all .4s ease-in-out;
 }
 
@@ -251,7 +291,8 @@ a, a:hover {
 	padding: 1% 5%;
 	color: #2A3A3F;
 	transition: all .3s ease-in-out;
-
+	font-size: 1.1em;
+	font-weight: 600;
 }
 
 .other-btn:hover {
@@ -266,11 +307,23 @@ a, a:hover {
 .together {
 	background-color: #397FDA;
 	color: #FFF;
-}
-
-.together {
 	padding: 5% 20%;
 	text-align: center;
+}
+
+.together p {
+	font-size: 1.5em;
+}
+
+.together .other-btn {
+	border-color: white;
+	color: white;
+}
+
+.together .other-btn:hover {
+	border-color: white;
+	color: #397FDA;
+	background-color: white;
 }
 
 /*Footer*/
@@ -330,3 +383,181 @@ footer p {
  #copy {
  	margin-top: 3%;
  }
+
+ /*Media Queries*/
+
+ @media only screen 
+  and (min-width: 320px) 
+  and (max-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  	/*General*/
+
+  	body {
+  		font-size: 1.6em;
+  	}
+
+  	/*Header*/
+
+  	#header #container {
+  		padding: 55%  1%;
+  	}
+
+  	#container h1 {
+  		font-size: 1.8em;
+  	}
+
+  	/*Experience*/
+  	.skills-block {
+  		margin: 8% 5%;
+  	}
+
+  	.skills-block i {
+  		margin-bottom: 3%;
+  	}
+
+  	.skills .lead {
+  		margin-bottom: 0;
+  	}
+
+  	/*Work*/
+
+  	.project div {
+  		margin-bottom: 5%;
+  	}
+
+  	.tags span{
+  		margin-bottom: 0;
+  	}
+
+  	/*Skills-list*/
+
+  	#skills-list li {
+  		display: block;
+  		width: 100%;
+  		margin: 0;
+  		text-align: left;
+  		font-size: 1.3em;
+  	}
+
+  	/*Work Together*/
+
+  	.together {
+  		padding: 8% 5%;
+  		font-size: .8em;
+  	}
+  	/*Footer*/
+
+  	.col-sm-4 {
+  		margin-bottom: 10%;
+  	}
+
+  	.col-sm-4 h4 {
+  		font-size: 1.5em;
+  		font-weight: 600;
+  	}
+
+  	.svg-lead {
+  		padding-top: 0;
+  	}
+}
+
+@media screen 
+  and (min-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  	/*General*/
+
+ 
+  	.lead {
+  		margin-bottom: 0;
+  	}
+
+  	h1 {
+  		font-size: 2em;
+  	}
+
+  	/*Header*/
+
+  	#header #container {
+  		padding: 0 23%;
+  		padding-top: 30vh;
+  	}
+
+  	.intro {
+  		font-size: 3.2em;
+  		font-weight: 700;
+  	}
+
+  	/*Experience*/
+
+  	.skills {
+  		padding: 3% 0;
+  	}
+
+  	.skills-block p {
+  		padding: 0 5px;
+  	}
+
+  	.skills .lead {
+  		margin-bottom: 3%;
+  	}
+
+  	.skills-block .fa {
+  		margin-bottom: 4%;
+  	}
+
+  	.skills-block h2 {
+  		margin-bottom: 4%;
+  	}
+
+
+  	/*Work*/
+
+  	.project h2 {
+  		font-weight: bold;
+  	}
+
+  	.project .col-sm-6 {
+  		padding: 0 5%;
+  	}
+
+  	.project p {
+  		font-size: 1.3em;
+  	}
+
+  	.project {
+  		padding: 5% 3%;
+  	}
+
+  	/*Skills List*/
+
+  	.other h1 {
+  		margin-top: 5%;
+  	}
+
+  	#skills-list {
+  		padding-top: 0;
+  	}
+
+  	/*Work Together*/
+
+  	.together {
+  		padding: 3% 25%;
+  	}
+
+  	.together h1 {
+  		margin-bottom: 5%;
+  	}
+
+  	.together .pill-btn {
+  		margin-bottom: 0;
+  	}
+
+  	/*Footer*/
+
+  	#copy {
+  		margin-top: 0;
+  	}
+
+}
