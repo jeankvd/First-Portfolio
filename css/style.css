@@ -37,7 +37,6 @@ a, a:hover {
 
 #header {
 	position: relative;
-	background: ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -93,47 +92,18 @@ a, a:hover {
 	margin-top: 12px;
 }
 
-
-/*Typed.JS*/
-
-
 .element {	/*Limit space available to .element*/
 	display: block; /*to prevent spacing inconsistencies*/
 	height: 10px;
 }
 
 
-/*Typed JS Blinking Cursor*/
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-
-
 /*Skills Section*/
 
 .skills {
-	padding: 6% 0 ;
-	margin: auto;;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	margin: auto;
 }
 
 .skills h1 , .skills p, .skills h2{
@@ -142,7 +112,7 @@ a, a:hover {
 }
 
 .skills h2 {
-	margin: 10px inherit;
+	margin: 10px ;
 	font-weight: bold;
 }
 
@@ -395,9 +365,14 @@ footer p {
 
   	body {
   		font-size: 1.6em;
+  		width: 100%;
   	}
 
   	/*Header*/
+
+  	#header {
+  		height: 100%;
+  	}
 
   	#header #container {
   		padding: 55%  1%;
