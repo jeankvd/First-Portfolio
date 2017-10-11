@@ -43,7 +43,7 @@ a, a:hover {
 	background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6)), url("../img/header.png");
 	color: #fff;
 	height: 100vh;
-	
+
 }
 
 #header #container {
@@ -97,6 +97,20 @@ a, a:hover {
 	height: 10px;
 }
 
+
+/*About*/
+
+#about img {
+	border-radius: 100%;
+	border: 12px outset #88B4ED;
+}
+
+#about p {
+	margin: 3%;
+}
+#about .container {
+	max-width: 80%;
+}
 
 /*Skills Section*/
 
@@ -172,12 +186,17 @@ a, a:hover {
 	margin-bottom: 2%;
 }
 
-.project p {
+.project p, #about p {
 	color: #737373;
 	margin-bottom: 11%;
 	line-height: 1.5;
 	font-size: 1.1em;
 	font-weight: 500;
+}
+
+#about p {
+	font-size: 1.3em;
+	margin-bottom: 3%;
 }
 
 .project p, .tags {
@@ -208,7 +227,7 @@ a, a:hover {
 
 .project {
 	margin: 5% inherit;
-	padding: 8% 0 8% 0; 
+	padding: 8% 0 8% 0;
 	border-bottom: solid 1px #d6e1e5;
 }
 
@@ -234,7 +253,7 @@ a, a:hover {
 #skills-list{
 	padding: 0;
 	padding-top: 4%;
-	
+
 }
 
 #skills-list li {
@@ -242,10 +261,10 @@ a, a:hover {
 	display: inline-block;
 	margin: 5px;
 	padding: 5px;
-	width: 30%;
 	color: #397FDA;
 	font-size: 1.5em;
-
+	border: solid 2px #397FDA;
+	border-radius: 15px;
 }
 
 /*Link other projects*/
@@ -356,10 +375,10 @@ footer p {
 
  /*Media Queries*/
 
- @media only screen 
-  and (min-width: 320px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+ @media only screen
+  and (min-width: 320px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
   	/*General*/
 
@@ -395,6 +414,19 @@ footer p {
   		margin-bottom: 0;
   	}
 
+		/*about*/
+
+		#about p {
+			text-align: center;
+			margin: 0;
+			font-size: 1.1em;
+			margin-top: 5%;
+		}
+
+		#about .container, #about .col-sm-9 {
+			padding: 0;
+		}
+
   	/*Work*/
 
   	.project div {
@@ -408,12 +440,18 @@ footer p {
   	/*Skills-list*/
 
   	#skills-list li {
-  		display: block;
-  		width: 100%;
-  		margin: 0;
+  		margin: 2px;
   		text-align: left;
   		font-size: 1.3em;
   	}
+
+		.other {
+			padding: 0;
+		}
+
+		#skills-list br {
+			display: none;
+		}
 
   	/*Work Together*/
 
@@ -437,13 +475,13 @@ footer p {
   	}
 }
 
-@media screen 
-  and (min-width: 1200px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media screen
+  and (min-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
   	/*General*/
 
- 
+
   	.lead {
   		margin-bottom: 0;
   	}
@@ -463,6 +501,7 @@ footer p {
   		font-size: 3.2em;
   		font-weight: 700;
   	}
+
 
   	/*Experience*/
 
