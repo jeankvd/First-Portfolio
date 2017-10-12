@@ -168,6 +168,10 @@ a, a:hover {
 	text-align: center;
 }
 
+.work a {
+	color: #397FDA;
+}
+
 .work h1, .other h1 {
 	margin-top: 8%;
 }
