@@ -168,7 +168,7 @@ a, a:hover {
 	text-align: center;
 }
 
-.work a {
+.work a:first-child {
 	color: #397FDA;
 }
 
