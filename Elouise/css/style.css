@@ -58,7 +58,7 @@ a span {
 	width: 100%;
 }
 
-div.navbar-nav { 
+div.navbar-nav {
 	float: right;
 }
 
@@ -139,12 +139,15 @@ font-size: 4em;
 }
 
 .portfolio li {
-	margin-right: 0px; 
+	margin-right: 0px;
 	padding: 5px 25px;
 	text-align: center;
-	color: #515f67;
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+.portfolio li a {
+	color: #515f67;
 }
 
 li.active, a.active{
@@ -331,7 +334,7 @@ li.active, a.active{
 textarea , input {
 	background-color: rgba(0,0,0,0);
 	border: none;
-	border: 2px white solid; 
+	border: 2px white solid;
 }
 
 input .submit {
@@ -357,7 +360,7 @@ footer a:not(:last-child) {
 
 /*MEDIA QUERIES*/
 
-@media only screen  
+@media only screen
   and (max-width: 768px) {
 
 
@@ -438,13 +441,13 @@ footer a:not(:last-child) {
   	}
 }
 
-@media only screen  
+@media only screen
   and (min-width: 1200px) {
 
   	/*General*/
 
   	p {
-  		margin-bottom: 20px; 
+  		margin-bottom: 20px;
   	}
 
 

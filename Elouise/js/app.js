@@ -14,7 +14,7 @@ $(".portfolio ul a").click( function(evt) { //click event to change imgs thumbna
 	var request = $(this).attr("href");
 
 	$(".portfolio li").removeClass("active");
-	$(this).children("li").addClass("active");
+	$(this).parent("li").addClass("active");
 
 	$(".portfolio-img").each(function(i, img){ //loop to change src of img
 		img = $(img); //convert the object into jQuery object
@@ -31,7 +31,7 @@ $(".portfolio-img").parent().click(function(evt){//lightbox function
 	console.log($(this).attr('href'));
 	var href = $(this).attr('href');
   //Update overlay with image on the link
-	 $image.attr("src", href); 
+	 $image.attr("src", href);
 	 $lightbox.show();
 	 $arrows.show();
 });
@@ -64,4 +64,3 @@ $arrows.parent().click(function(evt){ //lightbox arrows
 
 	$(".lightbox-img").attr("src", newHref);
 });
-
