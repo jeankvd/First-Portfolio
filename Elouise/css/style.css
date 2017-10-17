@@ -1,0 +1,463 @@
+/*GENERAL*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.container {
+	padding: 50px 0;
+}
+
+h2 {
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+hr {
+	width: 50px;
+	display: inline-block;
+	border-bottom: solid white 2px;
+	margin-top: 0;
+}
+
+p{
+	font-size: 1em;
+}
+
+iframe {
+	border: none;
+}
+
+/*GENERAL LINKS*/
+
+a {
+	color: white;
+}
+
+a:hover , a:focus {
+	color: #4bcaff;
+	text-decoration: none;
+}
+
+/*NAVBAR BRAND(ELOUISE)*/
+
+a span {
+	color: #4bcaff;
+	text-decoration: none;
+}
+
+/*NAVBAR*/
+
+.navbar {
+	border-radius: 0px;
+	background-color: #465058;
+	opacity: .85;
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+
+div.navbar-nav { 
+	float: right;
+}
+
+.navbar a:not(:last-child) {
+	margin-right: 15px;
+}
+
+.navbar a:not(.navbar-brand) {
+	padding: 5px 25px;
+	font-size: 1.3em;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	font-size: 2em;
+}
+
+/*JUMBOTRON*/
+
+.jumbotron {
+	background: url("../img/jumbobg1.png");
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.jumbotron .first {
+	margin-top: 35vh;
+}
+
+.jumbotron h1 {
+	line-height: 1.2;
+	background-color: rgba(80, 80, 80, .7);
+	display: inline-block;
+	padding: 5px 15px;
+	/*font-size: 6.1rem; Original for jumbotron*/
+	font-size: 4rem;
+}
+
+/*SERVICES*/
+
+.services {
+	background-color: #4bcaff;
+}
+
+.fa {
+font-size: 4em;
+}
+
+/*Portfolio*/
+
+.portfolio {
+	padding: 5%;
+	color: #515f67;
+	text-align: right;
+}
+
+.portfolio h2 {
+	float: left;
+	margin-top: 0;
+}
+
+.portfolio hr {
+	border-bottom: solid #515f67 5px;
+	display: block;
+	margin-left: 0;
+	margin-top: -10px;
+}
+
+.portfolio h2 , .portfolio ul , .portfolio li {
+	display: inline-block;
+}
+
+.portfolio ul {
+	padding-left: 0;
+}
+
+.portfolio li {
+	margin-right: 0px; 
+	padding: 5px 25px;
+	text-align: center;
+	color: #515f67;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+li.active, a.active{
+	border: 3px solid #4bcaff;
+	color: #4bcaff;
+}
+
+/*PORTFOLIO IMG*/
+
+.portfolio .col-sm-3 {
+	padding: 15px;
+}
+
+.portfolio-img {
+	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+/*PORTFOLIO-IMG OVERLAY*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.7);
+}
+
+.col-sm-3:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+	font-size: 4em;
+	color: white;
+	position: relative;
+	text-align: center;
+	margin-top: 13%;
+}
+
+/*.overlay1 { /Whoa effect/
+	filter: grayscale(1);
+}*/
+
+
+/*LIGHTBOX*/
+
+#lightbox {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+.lightbox-img {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.arrows {
+	position: fixed;
+	display: none;
+	margin-top: 48vh;
+	z-index: 1;
+}
+
+#left {
+	left: 0;
+}
+
+#right {
+	right: 0;
+}
+
+/*Philosophy*/
+
+.philosophy {
+	background-color: #515f67;
+}
+
+.video-js {
+	height: 100%;
+	width: 100%;
+}
+
+.btn {
+	background: transparent;
+	border: solid 2px;
+	border-radius: 0;
+	transition: .4s all ease;
+}
+
+/*Quotes Section*/
+
+.quotes {
+	background-color: #4bcaff;
+}
+
+.quote {
+	font-size: 1.5em;
+}
+
+/*BIOGRAPHY*/
+
+.bio {
+	background: url(../img/elouise.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.icons {
+	font-size: .8em;
+}
+
+.icons .fa {
+	border: solid 3px white;
+	padding: 12px;
+	width: 78px;
+	margin-right: 8px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+	color: #515f67;
+}
+
+.testimonials hr {
+	border-bottom: solid #515f67 5px;
+}
+
+.testimonials p {
+	font-size: 2rem;
+	line-height: 2;
+}
+
+.testimonial:not(:last-child) {
+	display: none;
+}
+
+.person {
+	color: #4bcaff;
+}
+
+/*CONTACT*/
+.contact {
+	background: url(../img/contact.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.contact .row {
+	margin-top: 2%;
+}
+
+.message {
+	width: 100%;
+	min-height: 120px;
+	margin-bottom: 3%;
+	font-size: 1.5em;
+}
+
+.info {
+	min-width: 80%;
+	font-size: 1.5em;
+}
+
+textarea , input {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border: 2px white solid; 
+}
+
+input .submit {
+
+}
+
+.mobile-message {
+  		display: none;
+  	}
+
+/*FOOTER*/
+
+footer {
+	background-color: #353f47;
+	padding: 4%;
+}
+
+footer a:not(:last-child) {
+	margin-right: 5px;
+	padding-right: 7px;
+	border-right: 2px solid #515f67;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen  
+  and (max-width: 768px) {
+
+
+  	/*GENERAL*/
+
+  	body {
+  		text-align: center;
+  	}
+
+  	.container {
+  		padding: 5% ;
+  	}
+
+  	p {
+  		margin-bottom: 20px;
+  	}
+
+  	/*div {
+  		margin-bottom: 5%;
+  	}*/
+
+	hr {
+		width: 100%;
+	}
+
+	 /*Jumbotron*/
+
+  	.jumbotron .first {
+  		margin-top: 25vh;
+  	}
+
+  	/*SERVICES*/
+
+  	.services .row div {
+  		margin-bottom: 10%;
+  	}
+
+  	/*Portfolio*/
+
+  	.portfolio ul a {
+  		display: block;
+  		text-align: center;
+  	}
+
+  	.portfolio hr {
+  		display: none;
+  	}
+
+  	/*PHILOSOPHY*/
+
+  	.philosophy div {
+  		padding-bottom: 5%;
+  	}
+
+  	/*CONTACT*/
+
+  	.contact div, .mobile-message {
+  		padding-bottom: 5%;
+  	}
+
+  	.desktop-message {
+  		display: none;
+  	}
+
+  	.mobile-message {
+  		display: block;
+  	}
+
+  	/*Lightbox*/
+
+  	.lightbox-img {
+  		width: 320px;
+  		height: auto;
+  	}
+
+  	.arrows {
+  		margin-top: 46vh;
+  	}
+}
+
+@media only screen  
+  and (min-width: 1200px) {
+
+  	/*General*/
+
+  	p {
+  		margin-bottom: 20px; 
+  	}
+
+
+	/*Overlay Text*/
+
+	.overlay-text {
+
+		margin-top: 20%;
+	}
+
+  	/*Footer*/
+
+  	footer {
+  		padding: 2%;
+  	}
+}
