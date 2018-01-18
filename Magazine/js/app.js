@@ -8,7 +8,7 @@ $(".section").hover(function(evt){
   	$(this).addClass("hovered"); //add hover for transition
 	$(this).css("background-color", $color); //Make $color the background color
 	$(this).children("i").css("color", "#fbfbfb"); //Make the icon color white
-  	$(this).children(".title-text").css("display", "inline-block"); //display the title of section
+  	$(this).children(".title-text").åcss("display", "inline-block"); //display the title of section
 
 }, function(){ 							//Reverse all the styles just applied when hovered out
   	$(this).removeClass("hovered");
