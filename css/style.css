@@ -557,7 +557,15 @@ footer p {
   		width: 100%;
   	}
 
-  	/*Header*/
+	  /*Header*/
+	  
+	.text-after , .text-before {
+		display: none;
+	}
+
+	.logo h2 {
+		font-size: 18px;
+	}
 
   	#header {
   		height: 100%;
