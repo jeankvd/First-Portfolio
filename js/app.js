@@ -1,3 +1,12 @@
+// Hero
+
+document.addEventListener("click", changeWidth);
+
+function changeWidth(e) {
+	let viewAfter = document.getElementById("viewAfter");	
+	viewAfter.style = "width: " + e.clientX + "px;";
+}
+
 //Add effects to btn and rearrange cols based on width
 $(document).ready(function(){ 
 	$("a.pill-btn").addClass("wow fadeInUp").attr("data-wow-duration", "1s");
