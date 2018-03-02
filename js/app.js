@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+
 
 document.addEventListener("click", changeWidth);
 
@@ -131,3 +133,4 @@ $(document).on('click', '.scrollTo', function(event){
     }, 1000);
 });
 
+});
