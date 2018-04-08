@@ -364,6 +364,32 @@ transform: translate(-4px, -50%);
 
 /*Work Section*/
 
+.tabslist ul {
+	display: inline-block;
+	border-bottom: none;
+}
+
+.tabslist a {
+	border: none!important;
+    font-weight: bold;	
+}
+
+.tabslist .active a {
+	background-color: #397fda!important;
+    color: white!important;
+    border-radius: 0;
+    margin-right: 0;
+}
+
+.tabslist a:hover {
+	border: none;
+}
+
+
+.tabslist {
+	text-align: center;
+}
+
 .work h1, .work .lead{
 	text-align: center;
 }

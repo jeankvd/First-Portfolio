@@ -1,3 +1,5 @@
+// $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+
 document.addEventListener("DOMContentLoaded", function(event) {
   let hero = document.getElementById("hero");
 
