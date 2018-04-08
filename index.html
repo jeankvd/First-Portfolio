@@ -8,7 +8,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/typed.js" type="text/javascript"></script>
     <script src="https://use.fontawesome.com/abebc5126b.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
@@ -109,58 +110,254 @@ I used enginethemes page for *inspiration* ¯\_(ツ)_/¯ https://static.engineth
     <div class="work">
       <div class="container">
         <h1>My Work</h1>
-        <p class="lead">To see smaller  projects click <a href="https://github.com/jeankvd" target="_blank">here.</a></p>
-          <!--Third Project-->
-          <div class="row project rearrange">
-              <div class="col-sm-6">
-                  <h2>WooCommerce Site </h2>
-                  <div class="tags">
-                    <span>WooCommerce</span>
-                    <span>WordPress</span>
-                  </div>
-                    <p>
-                        A custom Woocommerce site built from the ground up with an emphasis on micro-interactions. Built with WooCommerce, SASS, Gulp and jQuery.
-                    </p>
-                    <a class="project-btn pill-btn" href="https://jeans-woocommerce.000webhostapp.com/" target="_blank" role="button">Visit the Website</a>
+        <!-- Tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Codepen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">MarketSmart (WordPress)</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Showcase</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="contact" aria-selected="false">Personal Projects (WordPress)</a>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Start Codepen -->
+            <div class="tab-pane fade active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				          <!--Third Project-->
+						  <div class="row project rearrange">
+							<div class="col-sm-6">
+								<h2>Luna The Schrodinger Wolf</h2>
+								<div class="tags">
+								  <span>HTML</span>
+								  <span>SASS</span>		
+								  <span>JavaScript</span>								  						  
+								</div>
+								  <p>
+									  Engaging dual overlay dynamic made possible with absolute positioning, overflows, and understanding the z-stacking context. Click anywhere to change the width of the blue overlay!
+								  </p>
+								  <a class="project-btn pill-btn" href="https://codepen.io/jeankvd/full/eVZJbq/" target="_blank" role="button">Visit the Codepen</a>
+							  </div>
+						  <div class="col-sm-6">
+							  <img src="img/wolf.gif" alt="WooCommerce" class="img-fluid">
+						  </div>
+						</div>
+						 <!--First Project-->
+						 <div class="row project">
+							<div class="col-sm-6">
+								<img src="img/transparent.gif" class="img-fluid" alt="wordpress site image">
+							</div>
+						  <div class="col-sm-6">
+							<h2>Doubly Transparent Background</h2>
+							<div class="tags">
+							  <span>SASS</span>
+							  <span>Particle.js</span>
+							</div>
+							  <p>
+                  See through Particle transparency made possible with a semi-obscure CSS property: Mix Blend mode.
+							  </p>
+							  <a class="project-btn pill-btn" href="https://codepen.io/jeankvd/full/oENOPP/" target="_blank" role="button">Visit the Codepen</a>
+						  </div>
+						</div>
+						<!--Second Project-->
+						<div class="row project rearrange">
+						  <div class="col-sm-6">
+							<h2>TowTimes Loader</h2>
+							<div class="tags">
+							  <span>CSS</span>
+							  <span>JavaScript</span>
+							</div>
+							  <p>
+								A page loader created from scratch for the upcoming redesign of the TowTimes Site.
+							  </p>
+							  <a class="project-btn pill-btn" href="https://codepen.io/jeankvd/full/rYZeLp/" target="_blank" role="button">Visit the Codepen</a>
+						  </div>
+						  <div class="col-sm-6 offset-md-6">
+							  <img src="img/tt.gif" class="img-fluid" alt="website image">
+						  </div>
+						</div>
+				  <!--End CodePen-->
+      </div>
+      <!-- Marketsmart -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				 <!--Third Project-->
+				 <div class="row project rearrange">
+					<div class="col-sm-6">
+						<h2>Caspers Body Shop</h2>
+						<div class="tags">
+						  <span>WordPress</span>
+              <span>ACF</span>
+              <span>Theme Development</span>              					  						  
+						</div>
+						  <p>
+                  A WordPress theme created from the Beaver Framework and customized to fit the client's need. Created while working at Market Smart
+						  </p>
+						  <a class="project-btn pill-btn" href="http://caspersbodyshop.com/" target="_blank" role="button">Visit the Website</a>
+					  </div>
+				  <div class="col-sm-6">
+					  <img src="img/caspers.png" alt="WooCommerce" class="img-fluid">
+				  </div>
+				</div>
+				 <!--First Project-->
+				 <div class="row project">
+					<div class="col-sm-6">
+						<img src="img/towingsolutions.png" class="img-fluid" alt="wordpress site image">
+					</div>
+				  <div class="col-sm-6">
+					<h2>Towing Solutions and Consulting</h2>
+					<div class="tags">
+					  <span>WordPress</span>
+            <span>CSS</span>
+            <span>Child Theme</span>            
+					</div>
+					  <p>
+               Child Theme created from the Divi Builder . One of the First Projects I worked on at MarketSmart.
+					  </p>
+					  <a class="project-btn pill-btn" href="http://towingsolutionsandconsulting.com/" target="_blank" role="button">Visit the Website</a>
+				  </div>
+				</div>
+				<!--Second Project-->
+				<div class="row project rearrange">
+				  <div class="col-sm-6">
+					<h2>Braccos Towing</h2>
+					<div class="tags">
+					  <span>WordPress</span>
+            <span>ACF</span>
+            <span>Beaver Framework</span>
+					</div>
+					  <p>
+						A child theme created from the Beaver Framework and customized to fit the client's need. Created while working at Market Smart
+					  </p>
+					  <a class="project-btn pill-btn" href="http://braccostowing.com/" target="_blank" role="button">Visit the Website</a>
+				  </div>
+				  <div class="col-sm-6 offset-md-6">
+					  <img src="img/braccos.png" class="img-fluid" alt="website image">
+				  </div>
+				</div>
+		  <!--End Marketsmart-->
+      </div>
+      <!-- Start ShowCase -->
+            <div class="tab-pane active in fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <!--Third Project-->
+              <div class="row project rearrange">
+                  <div class="col-sm-6">
+                      <h2>PW Roofing Site </h2>
+                      <div class="tags">
+						<span>WordPress</span>
+						<span>SASS</span>
+						<span>Freelance</span>
+                      </div>
+                        <p>
+                            Redesign for Perfect Roofing Solutions : an up and coming roofing company ubicated on Miami Florida. After assesing their needs I decided to build a better website that not only would impress their clients but would rival their competitors sites.
+                        </p>
+                        <a class="project-btn pill-btn" href="http://pwroof.x10host.com/" target="_blank" role="button">Visit the Website</a>
+                    </div>
+                <div class="col-sm-6">
+                    <img src="img/pwroofing.png" alt="WooCommerce" class="img-fluid">
                 </div>
-            <div class="col-sm-6">
-                <img src="img/wc.png" alt="WooCommerce" class="img-fluid">
-            </div>
-          </div>
-           <!--First Project-->
-           <div class="row project">
-              <div class="col-sm-6">
-                  <img src="img/proffesionalRoofing.jpg" class="img-fluid" alt="wordpress site image">
               </div>
-            <div class="col-sm-6">
-              <h2>WordPress from Scratch</h2>
-              <div class="tags">
-                <span>WordPress</span>
-                <span>Freelance</span>
-              </div>
-                <p>
-                  Perfect Roofing Solutions is an up and coming roofing company ubicated on Miami Florida. After assesing their needs I decided to build a website that not only would impress their clients but would rival their competitors sites.
-                </p>
-                <a class="project-btn pill-btn" href="https://proffesionalroofingsolutions.000webhostapp.com" target="_blank" role="button">Visit the Website</a>
-            </div>
-          </div>
-          <!--Second Project-->
-          <div class="row project rearrange">
-            <div class="col-sm-6">
-              <h2>A's Child Theme</h2>
-              <div class="tags">
-                <span>WordPress</span>
-                <span>Child Themes</span>
-              </div>
-                <p>
-                  A child theme created from the Beaver Framework and customized to fit the client's need. Created while working at Market Smart
-                </p>
-                <a class="project-btn pill-btn" href="http://asautoandtruckrepair.com/" target="_blank" role="button">Visit the Website</a>
-            </div>
-            <div class="col-sm-6 offset-md-6">
-                <img src="img/asauto.png" class="img-fluid" alt="website image">
-            </div>
-          </div>
+			<!--Third Project-->
+			<div class="row project">
+					<div class="col-sm-6">
+							<img src="img/caspers.png" alt="WooCommerce" class="img-fluid">
+						</div>
+					<div class="col-sm-6">
+						<h2>Caspers Body Shop</h2>
+						<div class="tags">
+						<span>WordPress</span>
+			<span>ACF</span>
+			<span>Theme Development</span>              					  						  
+						</div>
+						<p>
+				A WordPress theme created from the Beaver Framework and customized to fit the client's need. Created while working at Market Smart
+						</p>
+						<a class="project-btn pill-btn" href="http://caspersbodyshop.com/" target="_blank" role="button">Visit the Website</a>
+					</div>
+				</div>
+              <!--Second Project-->
+			<!--Third Project-->
+			<div class="row project rearrange">
+				<div class="col-sm-6">
+					<h2>Luna The Schrodinger Wolf</h2>
+					<div class="tags">
+						<span>HTML</span>
+						<span>SASS</span>		
+						<span>JavaScript</span>								  						  
+					</div>
+						<p>
+							Engaging dual overlay dynamic made possible with absolute positioning, overflows, and understanding the z-stacking context. Click anywhere to change the width of the blue overlay!
+						</p>
+						<a class="project-btn pill-btn" href="https://codepen.io/jeankvd/full/eVZJbq/" target="_blank" role="button">Visit the Codepen</a>
+					</div>
+				<div class="col-sm-6">
+					<img src="img/wolf.gif" alt="WooCommerce" class="img-fluid">
+				</div>
+			</div>
+			</div>
+			<!-- Start Personal -->
+			<div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="contact-tab">
+				<div class="row project rearrange">
+						<div class="col-sm-6">
+							<h2>PW Roofing Site </h2>
+							<div class="tags">
+								<span>WordPress</span>
+								<span>SASS</span>
+								<span>Freelance</span>
+							</div>
+								<p>
+									Redesign for Perfect Roofing Solutions : an up and coming roofing company ubicated on Miami Florida. After assesing their needs I decided to build a better website that not only would impress their clients but would rival their competitors sites.
+								</p>
+								<a class="project-btn pill-btn" href="http://pwroof.x10host.com/" target="_blank" role="button">Visit the Website</a>
+							</div>
+						<div class="col-sm-6">
+							<img src="img/pwroofing.png" alt="WooCommerce" class="img-fluid">
+						</div>
+					</div>
+				<!--Third Project-->
+				<div class="row project ">
+						<div class="col-sm-6">
+								<img src="img/wc.png" alt="WooCommerce" class="img-fluid">
+						</div>
+						<div class="col-sm-6">
+							<h2>WooCommerce Site </h2>
+							<div class="tags">
+								<span>WooCommerce</span>
+								<span>WordPress</span>
+							</div>
+								<p>
+									A custom Woocommerce site built from the ground up with an emphasis on micro-interactions. Built with WooCommerce, SASS, Gulp and jQuery.
+								</p>
+								<a class="project-btn pill-btn" href="https://jeans-woocommerce.000webhostapp.com/" target="_blank" role="button">Visit the Website</a>
+							</div>
+					</div>
+					<!--Second Project-->
+					<div class="row project rearrange">
+					<div class="col-sm-6">
+						<h2>PSD to Site</h2>
+						<div class="tags">
+						<span>Skeleton framework</span>
+						<span>PSD to Site</span>
+						</div>
+						<p>
+							Small Site created from a PSD as a reference and keeping the site looking as close as possible to the original.
+						</p>
+						<a class="project-btn pill-btn" href="https://jeankvd.github.io/MysticHost" target="_blank" role="button">Visit the Website</a>
+					</div>
+					<div class="col-sm-6 offset-md-6">
+						<img src="img/mystic.png" class="img-fluid" alt="website image">
+					</div>
+					</div>
+			</div>
+			<!-- End Personal -->
+            <!-- End ShowCase -->
+      </div>
+        <!-- End Tabs -->
+        <p class="lead">To see smaller  projects click <a href="https://github.com/jeankvd" target="_blank">here.</a></p>
+<!--Third Project-->
 
 
       </div>

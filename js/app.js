@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  let hero = document.getElementById("hero");
 
 
-document.addEventListener("click", changeWidth);
+hero.addEventListener("click", changeWidth);
 
 
 function changeWidth(e) {
