@@ -450,7 +450,6 @@ transform: translate(-4px, -50%);
 /*Project Image*/
 .img-fluid {
 	width: 100%;
-	height: 100%;
 }
 
 .project .img-fluid {
